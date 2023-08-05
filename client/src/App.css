@@ -1,0 +1,137 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  color: #abb2bf;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #61dafb;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+select {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45aaf2;
+}
+
+button:active {
+  background-color: #2e85a0;
+}
+
+/* Code Editor container */
+.CodeEditorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CodeEditor {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Custom styles for Ace Editor */
+.CodeEditor .ace_editor {
+  border-radius: 5px;
+  border: 1px solid #61dafb;
+}
+
+/* Adjust the size of the Ace Editor toolbar */
+.CodeEditor .ace_toolbar {
+  height: 30px;
+}
+
+/* Styling for the status message based on its content */
+.status-pending {
+  color: #61dafb;
+}
+
+.status-success {
+  color: #2ecc71;
+}
+
+.status-error {
+  color: #e74c3c;
+}
+
+.status-running {
+  color: #f39c12;
+}
+
+.time-details {
+  font-size: 14px;
+}
+
+/* Output container */
+.outputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* Adjust the height of the output box */
+.output {
+  width: 100%;
+  height: 150px;
+  overflow-y: auto;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  background-color: #2d333b;
+  color: #abb2bf;
+  margin-top: 10px;
+}
+
+/* Scrollbar styles for output box */
+.output::-webkit-scrollbar {
+  width: 8px;
+}
+
+.output::-webkit-scrollbar-thumb {
+  background-color: #61dafb;
+  border-radius: 5px;
+}
+
+/* Remove default Ace Editor text selection styles */
+.CodeEditor .ace_editor ::selection {
+  background: #61dafb;
+}
+
+.CodeEditor .ace_editor ::-moz-selection {
+  background: #61dafb;
+}
